@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="375.0" prefWidth="600.0" style="-fx-background-color: #755a5a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DashBoardFormController">
+   <children>
+      <ImageView fitHeight="124.0" fitWidth="124.0" layoutX="427.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Asserts/icons8-order-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="135.0" fitWidth="135.0" layoutX="233.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Asserts/icons8-purchase-order-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="135.0" fitWidth="124.0" layoutX="52.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Asserts/icons8-customer-64.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnCustomer" buttonType="RAISED" layoutX="47.0" layoutY="110.0" onMouseClicked="#mouseClick" opacity="0.0" prefHeight="135.0" prefWidth="135.0" style="-fx-background-color: #a49999;" text=" " textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="btnItem" buttonType="RAISED" layoutX="230.0" layoutY="110.0" onMouseClicked="#mouseClick" opacity="0.0" prefHeight="135.0" prefWidth="135.0" style="-fx-background-color: #a49999;" text=" " textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="btnOrder" buttonType="RAISED" layoutX="422.0" layoutY="115.0" onMouseClicked="#mouseClick" opacity="0.0" prefHeight="135.0" prefWidth="135.0" style="-fx-background-color: #a49999;" text="Order" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <Label alignment="BOTTOM_CENTER" layoutX="212.0" layoutY="281.0" prefHeight="50.0" prefWidth="178.0" text="Welcome" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_CENTER" layoutX="145.0" layoutY="331.0" prefHeight="17.0" prefWidth="311.0" text="Customer, Item and Order system" textFill="WHITE" />
+      <Label alignment="BOTTOM_CENTER" layoutX="156.0" layoutY="9.0" prefHeight="40.0" prefWidth="258.0" text="SUPERMARKET" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

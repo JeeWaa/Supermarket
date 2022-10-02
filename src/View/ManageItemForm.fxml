@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="583.0" prefWidth="786.0" style="-fx-background-color: #755a5a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ManageItemFormController">
+   <children>
+      <TableView fx:id="tblItem" layoutX="13.0" layoutY="336.0" prefHeight="200.0" prefWidth="761.0">
+         <columns>
+            <TableColumn fx:id="colItemCode" prefWidth="75.0" text="Code" />
+            <TableColumn fx:id="colItemName" prefWidth="128.0" text="Item" />
+            <TableColumn fx:id="colItemCompany" prefWidth="110.0" text="Company" />
+            <TableColumn fx:id="colItemDescription" prefWidth="247.0" text="Description" />
+            <TableColumn fx:id="colItemPrice" prefWidth="125.0" text="Price" />
+            <TableColumn fx:id="colItemQty" prefWidth="75.0" text="Qty" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="txtItemCode" focusColor="WHITE" layoutX="220.0" layoutY="75.0" prefHeight="25.0" prefWidth="360.0" promptText="Item code" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtItemName" focusColor="WHITE" layoutX="220.0" layoutY="112.0" prefHeight="25.0" prefWidth="360.0" promptText="Item" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtItemCompany" focusColor="WHITE" layoutX="220.0" layoutY="149.0" prefHeight="25.0" prefWidth="360.0" promptText="Company" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtItemDescription" focusColor="WHITE" layoutX="220.0" layoutY="184.0" prefHeight="25.0" prefWidth="360.0" promptText="Descripsion" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtItemPrice" focusColor="WHITE" layoutX="220.0" layoutY="219.0" prefHeight="25.0" prefWidth="360.0" promptText="Price" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtItemQty" focusColor="WHITE" layoutX="220.0" layoutY="257.0" prefHeight="25.0" prefWidth="360.0" promptText="Qty" unFocusColor="WHITE" />
+      <JFXButton fx:id="btnCancelCustomerFormId" buttonType="RAISED" layoutX="698.0" layoutY="544.0" onMouseClicked="#cancelCustomerForm" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #b17d7d;" text="Cancel" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="btnSaveItemId" buttonType="RAISED" layoutX="220.0" layoutY="295.0" onMouseClicked="#saveItem" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: #a8c925;" text="Save" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="btnUpdateItemId" buttonType="RAISED" layoutX="447.0" layoutY="295.0" onMouseClicked="#updateItem" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: #a8c925;" text="Update" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="btnDeleteItemId" buttonType="RAISED" layoutX="696.0" layoutY="296.0" onMouseClicked="#deleteItem" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #d34c4c;" text="Delete" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <Label layoutX="14.0" layoutY="76.0" prefHeight="25.0" prefWidth="133.0" text="Item Code" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="113.0" prefHeight="25.0" prefWidth="133.0" text="Item Name" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="150.0" prefHeight="25.0" prefWidth="133.0" text="Item Company" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="185.0" prefHeight="25.0" prefWidth="133.0" text="Item Description" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="220.0" prefHeight="25.0" prefWidth="133.0" text="Item Price" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="258.0" prefHeight="25.0" prefWidth="133.0" text="Item Qty" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="166.0" layoutY="76.0" prefHeight="25.0" prefWidth="28.0" text=":" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="166.0" layoutY="113.0" prefHeight="25.0" prefWidth="28.0" text=":" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="166.0" layoutY="150.0" prefHeight="25.0" prefWidth="28.0" text=":" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="166.0" layoutY="185.0" prefHeight="25.0" prefWidth="28.0" text=":" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="166.0" layoutY="220.0" prefHeight="25.0" prefWidth="28.0" text=":" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="166.0" layoutY="258.0" prefHeight="25.0" prefWidth="28.0" text=":" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="47.0" prefWidth="761.0" text="Item" textFill="WHITE">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

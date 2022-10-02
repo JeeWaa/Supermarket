@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="567.0" prefWidth="764.0" style="-fx-background-color: #755a5a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ManageCustomerFormController">
+   <children>
+      <TableView fx:id="tblCustomer" layoutX="14.0" layoutY="318.0" prefHeight="200.0" prefWidth="738.0">
+         <columns>
+            <TableColumn fx:id="colCustomerId" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="colCustomerName" prefWidth="161.0" text="Name" />
+            <TableColumn fx:id="colCustomerAddress" prefWidth="266.0" text="Address" />
+            <TableColumn fx:id="colCustomerNumber" prefWidth="235.0" text="Number" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="txtCustomerId" focusColor="WHITE" layoutX="205.0" layoutY="81.0" prefHeight="25.0" prefWidth="376.0" promptText="C-001" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtCustomerName" focusColor="WHITE" layoutX="205.0" layoutY="130.0" prefHeight="25.0" prefWidth="376.0" promptText="Name" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtCustomerAddress" focusColor="WHITE" layoutX="205.0" layoutY="180.0" prefHeight="25.0" prefWidth="376.0" promptText="Address" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtCustomerNumber" focusColor="WHITE" layoutX="205.0" layoutY="230.0" prefHeight="25.0" prefWidth="376.0" promptText="Number" unFocusColor="WHITE" />
+      <JFXButton fx:id="btnCancelFormId" buttonType="RAISED" layoutX="665.0" layoutY="528.0" onMouseClicked="#cancelCustomerForm" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: #b88b8b;" text="Cancel" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="btnSaveCustomerId" buttonType="RAISED" layoutX="205.0" layoutY="272.0" onMouseClicked="#saveCustomer" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: #a8c925;" text="Save" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="btnDeleteCustomerId" buttonType="RAISED" layoutX="665.0" layoutY="272.0" onMouseClicked="#deleteCustomer" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: #d34c4c;" text="Delete" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="btnUpdateCustomerId" buttonType="RAISED" layoutX="445.0" layoutY="272.0" onMouseClicked="#updateCustomer" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: #a8c925;" text="Update" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <Label layoutX="13.0" layoutY="14.0" prefHeight="47.0" prefWidth="738.0" text="Customer" textFill="WHITE">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="81.0" prefHeight="25.0" prefWidth="136.0" text="Customer ID            " textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="130.0" prefHeight="25.0" prefWidth="136.0" text="Customer Name         " textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="180.0" prefHeight="25.0" prefWidth="136.0" text="Customer Address    " textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="230.0" prefHeight="25.0" prefWidth="136.0" text="Customer Number    " textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="162.0" layoutY="81.0" prefHeight="25.0" prefWidth="11.0" text=":" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="162.0" layoutY="130.0" prefHeight="25.0" prefWidth="11.0" text=":" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="162.0" layoutY="180.0" prefHeight="25.0" prefWidth="11.0" text=":" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="162.0" layoutY="230.0" prefHeight="25.0" prefWidth="11.0" text=":" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
